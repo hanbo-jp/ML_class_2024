@@ -1,4 +1,11 @@
 # 機械学習 第4回 python演習 (Numpy & Matolitlib)
+# 4-0
+### ML_classディレクトリにml04ディレクトリを作成せよ．
+```bash
+$ cd ~/ML_class # ML_class ディレクトリに移動する．「~」の部分は適宜変更．home直下にML_classディレクトリがある人は「~」のままでOK.
+$ mkdir ./ml04
+$ cd ./ml04
+```
 
 # 4-1
 ### 以下の３つのndarrayを作成し表示する，スクリプト「ml0401.py」を作成せよ．
@@ -235,5 +242,72 @@ $ python3 ml0408.py
     <img src="./img/4-8.png" width="400">
 </details>
 
+# 4-9
+### 先週の演習3-17,3-18,3-19で作成した「MyAddMatrices.py」「MySubMatrices.py」「MyMulMatrices.py」をml04ディレクトリにコピー後，numpyを使用し書き換えよ．3ファイルを読み込み実行する「ml0409.py」を作成せよ．「ml0409.py」と「MyAddMatrices.py」は以下にある例をコピー＆ペーストして良い．
+3ファイルのコピー：
+```bash
+$ cp ../ml03/MyAddMatrices.py .
+$ cp ../ml03/MySubMatrices.py .
+$ cp ../ml03/MyMulMatrices.py .
+```
+
+<b>MyAddMatrices.pyをnumpyを使って実装した例．
+これを参考にMySubMatrices.pyとMyMulMatrices.pyを書き換えよ．</b>
+```python
+import numpy as np
+
+class AddMatrices:
+    def __init__(self, Mat1, Mat2):
+        self.mat1 = np.array(Mat1)
+        self.mat2 = np.array(Mat2)
+    
+    def calculate(self):
+        result = self.mat1 + self.mat2
+        return result
+```
+
+<b>ml0409.pyの例</b>
+```python
+import sys
+sys.path.append("~/ML_class/ml04")
+from MyAddMatrices import AddMatrices
+from MyMulMatrices import MulMatrices
+from MySubMatrices import SubMatrices
+
+Mat1 = [[1,2,3],[4,5,6],[7,8,9]]
+Mat2 = [[1,4,7],[2,5,8],[3,6,9]]
+
+MyClasses = [AddMatrices, MulMatrices, SubMatrices]
+
+for Class in MyClasses:
+    each_class = Class(Mat1, Mat2)
+    result = each_class.calculate()
+    print(result)
+    print()
+```
+
+<details> <summary>解答(MySubMatrices.py)</summary>
+    <img src="./img/4-9-1.png" width="400">
+</details>
+
+<details> <summary>解答(MyMulMatrices.py)</summary>
+    <img src="./img/4-9-2.png" width="400">
+</details>
+
 # 4-10
-### 先週の演習
+### 以下のソースコードをコピー＆ペーストし実行させよ．スクリプト名は「ml0410.py」とせよ．
+```python
+import numpy as np
+import matplotlib.pyplot as plt #① matplotlibのimport
+x = np.arange(0, 6, 0.1) #② x軸の値の生成
+y1 = np.sin(x) #③ y軸の値の生成
+y2 = np.cos(x) #③ y軸の値の生成
+plt.plot(x, y1, label="sin") #④ xとy1をプロット
+plt.plot(x, y2, linestyle="--", label="cos") #④ xとy2をプロット
+plt.xlabel("x")
+plt.ylabel("y")
+plt.title("sin&cos")
+plt.legend()
+# plt.show() #⑤ 図の描画
+plt.savefig("./sin_cos.png") #⑤ 図の保存
+```
