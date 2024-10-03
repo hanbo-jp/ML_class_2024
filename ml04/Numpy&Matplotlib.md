@@ -2,6 +2,7 @@
 
 # 4-1
 ### 以下の３つのndarrayを作成し表示する，スクリプト「ml0401.py」を作成せよ．
+
 ```
 1つ目
 [1 2 3 4]
@@ -16,7 +17,7 @@
     [1. 2.]
     [3. 4.]
 ]
-"""
+```
 
 <details> <summary>ヒント</summary>
 ① numpyをimportする<br>
@@ -28,6 +29,23 @@
 </details>
 
 <details> <summary>解答</summary>
-<img src="./img/4-1.png" width="400">
+    <img src="./img/4-1.png" width="400">
 </details>
+
+# 4-2
+### 以下の0~11を保持する1次元のndarrayをarange()を用いて作成し表示する．その後，作成した1次元のndarrayを"2×6"と"4×3"のndarrayに形状を変換し表示するスクリプトを「ml0402.py」として作成せよ．
+
+<details> <summary>ヒント</summary>
+① arange()はrange()と同じ様に使用可能<br>
+ragne()の使い方は先週の資料参照()<br>
+② ndarrayの形状の変更は<br>
+<b>reshape()</b><br>
+を使用する．<br>
+</details>
+
+<details> <summary>解答</summary>
+    <img src="./img/4-2.png" width="400">
+</details>
+
+
 
