@@ -62,7 +62,7 @@ ragne()の使い方は先週の資料参照()<br>
 </details>
 
 <details> <summary>解答</summary>
-    <img src="./img/4-2.png" width="400">
+    <img src="./img/4-2.png" width="300">
 </details>
 
 # 4-3 
@@ -173,7 +173,7 @@ $ python3 ml0406.py
  [1.28571429 4.        ]]
 ```
 <details> <summary>解答</summary>
-    <img src="./img/4-6.png" width="400">
+    <img src="./img/4-6.png" width="300">
 </details>
 
 # 4-7
@@ -202,7 +202,7 @@ $ python3 ml0407.py
 </details>
 
 <details> <summary>解答</summary>
-    <img src="./img/4-7.png" width="400">
+    <img src="./img/4-7.png" width="300">
 </details>
 
 # 4-8
@@ -239,7 +239,7 @@ $ python3 ml0408.py
 </details>
 
 <details> <summary>解答</summary>
-    <img src="./img/4-8.png" width="400">
+    <img src="./img/4-8.png" width="500">
 </details>
 
 # 4-9
@@ -287,7 +287,7 @@ for Class in MyClasses:
 ```
 
 <details> <summary>解答(MySubMatrices.py)</summary>
-    <img src="./img/4-9-1.png" width="400">
+    <img src="./img/4-9-1.png" width="300">
 </details>
 
 <details> <summary>解答(MyMulMatrices.py)</summary>
