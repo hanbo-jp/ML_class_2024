@@ -55,7 +55,7 @@ $ python3 ml0401.py
 
 <details> <summary>ヒント</summary>
 ① arange()はrange()と同じ様に使用可能<br>
-ragne()の使い方は先週の資料参照()<br>
+ragne()の使い方は先週の資料参照( )<br>
 ② ndarrayの形状の変更は<br>
 <b>reshape()</b><br>
 を使用する．<br>
