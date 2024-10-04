@@ -20,7 +20,7 @@ class Gate:
         else:
             return ____ # affineの結果が1より大きい時
 ```
-### Point
+### ヒント
 ### ①__init__(self, w1, w2, b)のw1, w2, bはfloat型の変数である．
 ### ②np.sum(mul)とすると1次元ndarrayであるmul内の全ての要素を足した合わせることができる．
 ### ③np.sum(mul) + self.bでは，np.sum(mul)の結果はnp.int64型であるが，通常のint型とみなしてOK．よってこの計算は "int型 + float型" である．
@@ -124,12 +124,12 @@ w1: 0.7 w2: 0.5 b: -0.7
 ```
 
 <details> <summary>ヒント</summary>
-    「_____」を埋めれば良い．
-    <img src="./img/4-P4-1.png" width="300">
+    以下の「_____」を埋めれば良い．<br>
+    <img src="./img/4-P4-1.png" width="400">
 </details>
 
 <details> <summary>解答</summary>
-    <img src="./img/4-P4-2.png" width="300">
+    <img src="./img/4-P4-2.png" width="400">
 </details>
 
 # 4-P5
@@ -152,7 +152,7 @@ w1: 1.0 w2: 1.0 b: -1.0
 ```
 
 <details> <summary>解答</summary>
-    <img src="./img/4-P5.png" width="300">
+    <img src="./img/4-P5.png" width="500">
 </details>
 
 # 4-P6
@@ -181,7 +181,7 @@ w1: 1.0 w2: 1.0 b: -0.0
 </details>
 
 <details> <summary>解答</summary>
-    <img src="./img/4-P6.png" width="300">
+    <img src="./img/4-P6.png" width="600">
 </details>
 
 # 4-P7
@@ -204,7 +204,7 @@ w1: -0.1 w2: -0.1 b: 0.2
 ```
 
 <details> <summary>解答</summary>
-    <img src="./img/4-P7.png" width="300">
+    <img src="./img/4-P7.png" width="600">
 </details>
 
 
@@ -221,9 +221,9 @@ $ python3 XOR.py
 ```
 
 <details> <summary>ヒント</summary>
-    <b>AND = Gate( _____, _____, _____ )</b><br>
-    「 _____ 」は4-P5の候補から適当に選ぶ．ORとNANDについても同様<br>
-    <b> Ys = [ _____, _____, _____, _____ ]</b><br>
-    XORゲートのYの値を入れる<br>
-    <b>ml04P03.py</b>と同様に<b>pred_y</b>と<b>y</b>が一致する時表示するようにする．
+    ①<b>AND = Gate( _____, _____, _____ )</b><br>
+    「 _____ 」は4-P5の候補から適当に選ぶ．ORとNANDについても同様<br><br>
+    ②<b> Ys = [ _____, _____, _____, _____ ]</b><br>
+    XORゲートのYの値を入れる<br><br>
+    ③<b>ml04P03.py</b>と同様に<b>pred_y</b>と<b>y</b>が一致する時表示するようにする．
 </details>
